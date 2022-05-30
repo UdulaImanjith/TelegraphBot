@@ -25,7 +25,7 @@ Valid file types are 'jpeg', 'jpg', 'png', 'mp4' and 'gif'.
 
 To generate links in **group chats**, add me to your supergroup and send the command <code>/tl</code> as a reply to a valid media file.
 
-🏠 | [Home](https://t.me/teletipsofficialchannel)
+🏠 | [Home](https://t.me/isotrop)
             """
     await teletips.send_message(message.chat.id, text, disable_web_page_preview=True)
     
