@@ -17,16 +17,39 @@ teletips=Client(
 @teletips.on_message(filters.command('start') & filters.private)
 async def start(client, message):
     text = f"""
-Heya {message.from_user.mention},
-I am here to generate Telegraph links for your media files.
+ʜᴇʏ ᴛʜᴇʀᴇ {message.from_user.mention} 👋,
+ɪ ᴄᴀɴ ᴇᴀꜱɪʟʏ ɢᴇɴᴇʀᴀᴛᴇ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋꜱ ꜰᴏʀ ʏᴏᴜʀ ᴍᴇᴅɪᴀ ꜰɪʟᴇꜱ 📥
 
-Simply send a valid media file directly to this chat.
-Valid file types are 'jpeg', 'jpg', 'png', 'mp4' and 'gif'.
+ʏᴏᴜ ᴊᴜꜱᴛ ʜᴀᴠᴇ ᴛᴏ ꜱᴇɴᴅ ᴀ ᴠᴀʟɪᴅ ᴍᴇᴅɪᴀ ꜰɪʟᴇ ᴀɴᴅ ɪ ᴡɪʟʟ ᴅᴏ ᴛʜᴇ ʀᴇꜱᴛ 😏
+➡ (ᴠᴀʟɪᴅ ꜰɪʟᴇ ᴛʏᴘᴇꜱ ᴀʀᴇ 'jpeg', 'jpg', 'png', 'mp4' and 'gif')
 
-To generate links in **group chats**, add me to your supergroup and send the command <code>/tl</code> as a reply to a valid media file.
+💠 ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ ʟɪɴᴋꜱ ɪɴ **ɢʀᴏᴜᴘ ᴄʜᴀᴛꜱ**, ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ꜱᴜᴘᴇʀɢʀᴏᴜᴘ ᴀɴᴅ ꜱᴇɴᴅ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ <code>/tl</code> ᴀꜱ ᴀ ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴠᴀʟɪᴅ ᴍᴇᴅɪᴀ ꜰɪʟᴇ.
 
-🏠 | [Home](https://t.me/isotrop)
+👤 | Developed By [Nexus 💫](https://t.me/Nexus_8)
+❇️ | Project By [Isotrop Community](https://t.me/isotrop)
             """
+    
+buttons = [
+    [
+        InlineKeyboardButton(text="Official Group 👥", url="https://t.me/isotrop"),
+    ],
+    [
+        InlineKeyboardButton(text="Official Channel 🌎", url="https://t.me/isotrop_official"),
+        
+    ],
+    [
+        InlineKeyboardButton(text="Developer 💫", url="t.me/Nexus_8"),
+    ],
+    [
+        InlineKeyboardButton(text="Our Main Bot 🤖", url="t.me/Isotrop_Bot"),
+    ],
+    [
+        InlineKeyboardButton(
+            text="Add Me to Your Group ➕", url="http://t.me/MediaToLinkRobot?startgroup=true"
+        ),
+    ],
+]
+
     await teletips.send_message(message.chat.id, text, disable_web_page_preview=True)
     
 
