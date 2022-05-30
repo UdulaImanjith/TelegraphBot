@@ -16,6 +16,7 @@ teletips=Client(
 
 @teletips.on_message(filters.command('start') & filters.private)
 async def start(client, message):
+    reply_markup=InlineKeyboardMarkup(buttons),
     text = f"""
 ʜᴇʏ ᴛʜᴇʀᴇ {message.from_user.mention} 👋,
 ɪ ᴄᴀɴ ᴇᴀꜱɪʟʏ ɢᴇɴᴇʀᴀᴛᴇ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋꜱ ꜰᴏʀ ʏᴏᴜʀ ᴍᴇᴅɪᴀ ꜰɪʟᴇꜱ 📥
