@@ -42,10 +42,10 @@ async def get_link_private(client, message):
             local_path = await message.download(location, progress=progress)
             await text.edit_text("📤 ᴜᴘʟᴏᴀᴅɪɴɢ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴘʜ...")
             upload_path = upload_file(local_path) 
-            await text.edit_text(f"**🌐 | ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ**:\n\n<code>https://telegra.ph{upload_path[0]}</code>\n\n©️ [ɪꜱᴏᴛʀᴏᴘ ᴄᴏᴍᴍᴜɴɪᴛʏ](https://t.me/isotrop)")     
+            await text.edit_text(f"**🌐 | ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ**:\n\n<code>https://telegra.ph{upload_path[0]}</code>\n\n©️ ɪꜱᴏᴛʀᴏᴘ ᴄᴏᴍᴍᴜɴɪᴛʏ")     
             os.remove(local_path) 
         except Exception as e:
-            await text.edit_text(f"**❌ | ꜰɪʟᴇ ᴜᴘʟᴏᴀᴅ ꜰᴀɪʟᴇᴅ**\n\n<i>**Reason**: {e}</i>\n\n©️ [ɪꜱᴏᴛʀᴏᴘ ᴄᴏᴍᴍᴜɴɪᴛʏ](https://t.me/isotrop)")
+            await text.edit_text(f"**❌ | ꜰɪʟᴇ ᴜᴘʟᴏᴀᴅ ꜰᴀɪʟᴇᴅ**\n\n<i>**Reason**: {e}</i>\n\n©️ ɪꜱᴏᴛʀᴏᴘ ᴄᴏᴍᴍᴜɴɪᴛʏ")
             os.remove(local_path) 
             return                 
     except Exception:
@@ -62,10 +62,10 @@ async def get_link_group(client, message):
             local_path = await message.reply_to_message.download(location, progress=progress)
             await text.edit_text("📤 ᴜᴘʟᴏᴀᴅɪɴɢ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴘʜ...")
             upload_path = upload_file(local_path) 
-            await text.edit_text(f"**🌐 | ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ**:\n\n<code>https://telegra.ph{upload_path[0]}</code>\n\n©️ [ɪꜱᴏᴛʀᴏᴘ ᴄᴏᴍᴍᴜɴɪᴛʏ](https://t.me/isotrop)")     
+            await text.edit_text(f"**🌐 | ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ**:\n\n<code>https://telegra.ph{upload_path[0]}</code>\n\n©️ ɪꜱᴏᴛʀᴏᴘ ᴄᴏᴍᴍᴜɴɪᴛʏ")     
             os.remove(local_path) 
         except Exception as e:
-            await text.edit_text(f"**❌ | ꜰɪʟᴇ ᴜᴘʟᴏᴀᴅ ꜰᴀɪʟᴇᴅ**\n\n<i>**Reason**: {e}</i>\n\n©️ [ɪꜱᴏᴛʀᴏᴘ ᴄᴏᴍᴍᴜɴɪᴛʏ](https://t.me/isotrop)")
+            await text.edit_text(f"**❌ | ꜰɪʟᴇ ᴜᴘʟᴏᴀᴅ ꜰᴀɪʟᴇᴅ**\n\n<i>**Reason**: {e}</i>\n\n©️ ɪꜱᴏᴛʀᴏᴘ ᴄᴏᴍᴍᴜɴɪᴛʏ")
             os.remove(local_path) 
             return         
     except Exception:
