@@ -16,7 +16,6 @@ teletips=Client(
 
 @teletips.on_message(filters.command('start') & filters.private)
 async def start(client, message):
-    reply_markup=InlineKeyboardMarkup(buttons),
     text = f"""
 ʜᴇʏ ᴛʜᴇʀᴇ {message.from_user.mention} 👋,
 ɪ ᴄᴀɴ ᴇᴀꜱɪʟʏ ɢᴇɴᴇʀᴀᴛᴇ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋꜱ ꜰᴏʀ ʏᴏᴜʀ ᴍᴇᴅɪᴀ ꜰɪʟᴇꜱ 📥
@@ -28,29 +27,8 @@ async def start(client, message):
 
 👤 | Developed By [Nexus 💫](https://t.me/Nexus_8)
 ❇️ | Project By [Isotrop Community](https://t.me/isotrop)
+🤖 | [Official Bot](https://t.me/Isotrop_Bot)
             """
-    
-buttons = [
-    [
-        InlineKeyboardButton(text="Official Group 👥", url="https://t.me/isotrop"),
-    ],
-    [
-        InlineKeyboardButton(text="Official Channel 🌎", url="https://t.me/isotrop_official"),
-        
-    ],
-    [
-        InlineKeyboardButton(text="Developer 💫", url="t.me/Nexus_8"),
-    ],
-    [
-        InlineKeyboardButton(text="Our Main Bot 🤖", url="t.me/Isotrop_Bot"),
-    ],
-    [
-        InlineKeyboardButton(
-            text="Add Me to Your Group ➕", url="http://t.me/MediaToLinkRobot?startgroup=true"
-        ),
-    ],
-]
-
     await teletips.send_message(message.chat.id, text, disable_web_page_preview=True)
     
 
